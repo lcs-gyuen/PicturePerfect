@@ -53,13 +53,15 @@ for counter in 1...givenPhotos {
         }
     }
     
-    oneSide = arrayOfSides[(Int(arrayOfSides.count - 1) / 2)]
+    oneSide = arrayOfSides[(arrayOfSides.count - 1) / 2]
     
     
     // What was provided?
     let secondSide = numberOfPhotos / oneSide
     let perimeter = 2 * secondSide + 2 * oneSide
-    print("The given input was: \(givenInput)")
+ print("Minimum perimeter is \(perimeter) with dimensions \(secondSide) and \(oneSide)")
+    
+
 
 }
 
